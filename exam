@@ -9823,8 +9823,470 @@ Which of the following operating systems are supported by cPanel & WHM's officia
 
 CentOS Server
 ======================================================================================================================
+1) What is the full path to the directory that contains YUM repositories on a cPanel & WHM system?
+
+Ans : /etc/yum.repos.d
+
+2) The most popular, officially recommended update tier to use.
+
+Ans : STABLE
+
+3) Script you can use to install PostgreSQL on a cPanel & WHM server?
+
+Ans : /scripts/installpostgres
+
+4) What does the command ‘hwclock –hctosys’ do?
+
+Ans:  Set the System Time from the Hardware Clock.
+
+5) What service uses the mods installed in /opt?
+
+Ans:  Apace/PHP
+
+6) Which of the following directories contains the cPanel & WHM installation log?
+
+Ans: /var/log
+
+7) The makecpphp script is no longer supported. PHP pages served through cPanel and WHM interfaces will always use the PHP located in the /usr/local/cpanel/3rdparty/bin directory. If you want to customize the PHP that cPanel uses, you should customize the cpanel-php53 RPM.
+
+Ans: /scripts/makecpphp 11.36
+
+8) Describe the process of enabling IonCube for cPanel’s internal PHP on a server running cPanel 11.36+
+
+Ans: /scripts/phpextensionmanager install IonCubeLoader
+
+9) If you wanted to query DNS for the DKIM record for the domain “example.com”, what command would you use?Please enter your query here…
+
+Ans: dig default._domainkey.example.com TXT
+
+10) If you wanted to query DNS for the SPF record for the domain “example.com”, what command would you use?Please enter your query here…
+
+Ans: dig example.com TXT
+
+11) What service does /usr/local/cpanel/bin/splitlogs change logging for?
+
+Ans: Apache
+
+12) What is the name of the development tool we provide to allow you to interact with cPanel & WHM through your code?
+
+Ans: cPanel API
+
+13) What does the command ‘hwclock –hctosys’ do?
+
+Ans: Sets the system time from the hardware clock
+
+14) If cPanel & WHM was showing a blank page or an error, what is the full path to the log file you should check first?
+
+Ans: /usr/local/apache/logs/error_log
+
+15) In cPanel 11.36+, /scripts/makecpphp has been removed. If you wanted to customize the internal php that cPanel uses, what do you need to customize?
+
+Ans: cpanel-php53
+
+16) What are 3 of the log level types for Tomcat’s mod_jk?
+
+Ans:
+
+debug
+info
+erro
+
+17) What does ‘/usr/local/cpanel/scripts/perlmods -l’ do?
+
+Ans: show the list
+
+18) What is the file that handles PostgreSQL’s configuration settings on a cPanel & WHM server?
+
+Ans: /var/lib/pgsql/data/postgresql.conf
+
+19) If you wanted to query DNS for the SPF record for the domain “example.com”, what command would you use?
+
+Ans: dig example.com TXT
+
+20) If you wanted to trace and/or kill a running process from WHM, which feature should you use?
+
+Ans: Process Manager
+
+21) Describe the process of enabling IonCube for cPanel’s internal PHP on a server running cPanel 11.36+
+
+Ans:/scripts/phpextensionmanager install IonCubeLoader
+
+22) If you wanted to query DNS for the DKIM record for the domain “example.com”, what command would you use?Please enter your query here…
+
+Ans:dig default._domainkey.example.com TXT
+
+23) If the system log shows repeated connections to TCP port 143, which service is being accessed?
+
+Ans:IMAP
+
+24) On which port does Tomcat listen by default?
+
+Ans:8080
+
+25) In which primary programming language is cPanel & WHM developed?
+
+Ans: perl
+
+26) In what directory are custom DNS Zone Templates stored?
+
+Ans: /var/cpanel/zonetemplates
+
+27) What does the ‘ipcs -s’ command do?
+
+Ans: Shows semaphores
+
+28) In what log file would you find account creation/termination information?
+
+Ans: /var/cpanel/accounting.log
+
+29) What is the name of the script that you should use to update cPanel & WHM licenses?
+
+Ans: /usr/local/cpanel/cpkeyclt
+
+30) cPanel & WHM interfaces require Apache to be installed and working.
+
+Ans: True
+
+31) Which directory contains cPanel & WHM’s error_log file?
+
+Ans: /usr/local/cpanel/logs
+
+32) It is necessary to obtain a license before installing cPanel & WHM?
+
+Ans: False
+
+33) Where does Tomcat store its log files on a cPanel & WHM server?
+
+Ans: /usr/local/jakarta/tomcat/logs
+
+34) What is the name of the script you should use whenever you encounter a “License File Expired” message?
+
+Ans: /usr/local/cpanel/cpkeyclt
+
+35) What file permissions would /usr/bin/gcc have upon disabling WHM’s Compiler Access?
+
+Ans: 750
+
+36) Which of the following files is Pure-FTP’s error log?
+
+Ans: /var/log/messages
+
+37) What port is used to securely log into webmail? Please only include the port number in your answer.
+
+Ans: 2096
+
+38) When compiler access is enabled (default), the permissions for /usr/bin/gcc are:
+
+Ans: -rwxr-xr-x means 355
+
+39) When you disable compiler access, cPanel changes the permissions for /usr/bin/gcc:
+
+Ans: -rwxr-x— means 364
+
+40) What are the four public tiers of cPanel & WHM called?
+
+Ans: CURRENT,RELEASE,EDGE,STABLE
+
+42) Which file does Tweak Settings save its settings?
+
+Ans: /var/cpanel/cpanel.config
+
+43) Which of the following commands will output how many emails are in the system’s Exim queue?
+
+Ans: exim -bpc
+
+44) Which of the following commands will rebuild the RPM database?
+
+Ans: rpm –rebuilddb
+
+45) If your CentOS server was not able to resolve a domain (cpanel.net for example),what file would you check and/or add nameservers to help resolve domains?
+
+Ans: /etc/resolv.conf
+
+46) What is the full path to the hidden file containing the MySQL root password?
+
+Ans: /root/.my.cnf
+
+47) What is the directory /home/virtfs used for?
+
+Ans: Jailshell
+
+48) Which of the following scripts modify images in cPanel & WHM?
+
+Ans: /usr/local/cpanel/bin/rebuild_sprites
+
+49) Which of the following directories contains EasyApache’s log files?
+
+Ans: /usr/local/cpanel/logs/easy/apache
+
+cPanel Interview Question and Answer
+50) If the system log shows repeated connections to TCP port 143, which service is being accessed?
+
+Ans: IMAP
+
+51) What is the default secure port for POP3? (Enter a numeric value.)
+Ans: 995
+
+52) What is the secure port for IMAP? (Enter a numeric value.)
+Ans: 993
+
+53) Where is the Exim Mail Queue located?
+Ans: /var/spool/exim/input
+
+54) RNDC
+Ans: 953
+
+55) Which of these ports does WHM utilize?
+
+Ans: 2086/2087
+
+55)Which of the following files is Pure-FTP’s error log?
+
+Ans: /var/log/messages
+
+56) What does the strace utility do?
+
+Ans: Traces system calls
+
+57) What is the full path to the script you should run after editing a user file in /var/cpanel/users?
+
+Ans: /usr/local/cpanel/scripts/updateuserdomains
+
+58) Which of the following scripts would you use to create a new cPanel account ?
+
+Ans: /scripts/createacct
+
+59) Which of the following scripts would you use to create a new cPanel account from the command line?
+
+Ans: /usr/local/cpanel/scripts/createacct
+
+60) True or False: cPanel & WHM require Perl to work.
+
+Ans: False
+
+61) What is the secure port for SMTP? (Enter a numeric value.)
+
+Ans: 465
+
+62) Which of the following is the primary daemon responsible for managing antirelayd, eximstats, cpbandwd and chkservd?
+
+Ans: tailwatchd
+
+63) Which is the script used to update Apache & PHP?
+
+Ans: /scripts/easyapache
+
+64) Which of the following commands can you use to securely transfer files between 2 servers.
+
+Ans: scp
+
+65) What script would you use to manually add an email account from command line?
+
+Ans: /scripts/addpop
+
+66) Select all of the webmail clients that are included with cPanel.
+
+Ans:
+Roundcube
+SquirrelMail
+Horde
+
+67) Select the most popular, officially recommended update tier to use.
+
+Ans: Release
+
+68) True or False: You can use SFTP for any FTP account created?
+
+Ans: False
+
+69) True or False: All FTP passwords are stored in /etc/proftpd/
+
+Ans: True
+
+70) Which of the following commands (on a RedHat or CentOS system) will display information about how memory is being used by the server?
+
+Ans: cat /proc/meminfo, free
+
+71) True or False: cPanel & WHM requires SELinux to work.
+
+Ans: False
+
+72) What WHM feature allows you the ability to reconfigure and compile Apache and PHP?
+
+Ans: EasyApache
+
+73) Which of the following commands will allow you to look through text, one page at a time?
+
+Ans: less
+
+74) What is the file that handles PostgreSQL’s configuration settings on a cPanel & WHM server?
+
+Ans: /var/lib/pgsql/data/postgresql.conf
+
+75) Which directory contains cPanel & WHM’s error_log file?    Blank page error
+
+Ans: /usr/local/cpanel/logs/error_log
+
+76) Which two FTP servers are available in cPanel & WHM?
+
+Ans: Proftp and pure ftp
+
+77) Which of the following commands will remove or uninstall an RPM?
+
+Ans: rpm –e
+
+78) True or False: Running ‘/usr/local/apache/bin/apachectl -l’ from command line as root will list modules compiled in Apache.
+
+Ans: true
+
+79) How would you force cPanel & WHM to update when using the command line interface? Include the full path in your answer.
+
+Ans:/scripts/upcp –-force
+
+80) What is the default port for SSH? (Enter a numeric port.)
+
+Ans: 22
+
+81) In what directory are account Email forwarders stored or saved?
+
+Ans: /etc/vdomainaliases
+
+82) What port is used to securely log into webmail?  Please only include the port ?
+
+Ans:2096
+
+83) In what directory are DNS Zone .db files stored by default?
+
+Ans: /var/named/
+
+84) What cpanel version is running?
+
+Ans: cat /usr/local/cpanel/version
+
+85) Which of the following files is MySQL ‘s Startup error log?
+
+Ans: /var/lib/mysql/hostname.err
+
+86)What is the name of the only supported theme in cPanel?
+
+Ans:x3
+
+87) Which of the following directories contains PostgreSQL data?
+
+Ans: /var/lib/pgsql
+
+88) Where is the Exim configuration file located?
+
+Ans: /etc/exim.conf
+
+89) Which log file stores cPanel & WHM license updates?
+
+Ans:/usr/local/cpanel/logs/license_log
+
+90) What resources are available to pass cPanel Univeristy exams?
+
+Ans:Daily use of Linux and cPanel, docs.cpanel.net
+
+91) What anti-virus software is available for cPanel &WHM?
+
+Ans: ClamAV
+
+92) How would you determine what version of Exim is currently installed?
+
+Ans: exim -bV
+
+93) What is YUM?
+
+Ans:A package manager for Linux
+
+94) Which of the following email applications are not available in Webmail? (Check all that apply.)
+
+Ans:
+Smartmail
+Gmail
+
+95) Which of the following commands will allow you to look through text, one page at a time?
+
+Ans:less
+
+96) /scripts/installimagemagick has been removed as of 11.36. What command can be used to install the ImageMagick PHP extension?
+
+Ans:
+If you require PHP bindings with Apache
+/usr/local/bin/pecl install imagick
+
+If you wish to use ImageMagick with Apache,
+yum -y install ImageMagick-devel ImageMagick-c++-devel
+
+97) On what default secure port does Apache listen for a connection? (Enter a numeric value.)
+
+Ans: 443
+
+98) In what directory are MySQL databases created and stored?
+
+Ans: /var/lib/mysql
+
+99) On which default port does MySQL listen for a connection?
+
+Ans: 3306
+
+100) For which of the following is mod_mono used?
+
+Ans: Apache ASP.NET Support
+
+101)Which command should you use to make a file immutable?  Do not include the full path in your answer.
+
+Ans : chattr +i file
+
+102) What file is used to prevent updates to certain files by cPanel?
+
+Ans : /etc/cpupdate.conf
+
+103) If you wanted to change the shared main IP on your cPanel & WHM machine, what area of WHM would you use to change the IP for all sites and sections?
+Ans : Basic cPanel & WHM Setup
+
+104) What does the ‘usermod -s’ command do ?
+
+Ans : Changes shell line in /etc/passwd
+
+105) Which of the following directories contains the Tomcat installation on cPanel & WHM?
+
+Ans : /usr/local/jakarta
+
+ 
+
+Commonly Used Port Numbers
+This is a list of commonly used ports, and does not include all possible ports that may be opened on a server.
+CPANEL
+cPanel     2082
+cPanel – SSL     2083
+WHM     2086
+WHM – SSL     2087
+Webmail     2095
+Webmail – SSL     2096
+E-MAIL
+POP3     110
+POP3 – SSL     995
+IMAP     143
+IMAP – SSL     993
+SMTP     25
+SMTP Alternate     26
+SMTP Alternate     587
+SMTP – SSL     465
+WEB
+HTTP     80
+SSL     443
+FTP     21
+FTPs     990
+SFTP     22
+SFTP Shared/Reseller Servers     2222
+Webdisk     2077
+Webdisk – SSL     2078
+MySQL     3306
+MSSQL     1433
+SSH     22
+SSH Shared/Reseller Servers     2222
 ======================================================================================================================
 ======================================================================================================================
 
-http://ivanoctav.blogspot.com/2022/02/digital-marketing-professional.html
 
