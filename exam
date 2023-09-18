@@ -9599,6 +9599,229 @@ Which of the following best describes the difference between a process and a thr
 
 Processes can contain multiple threads, and the threads contained in the process share its resources.
 ======================================================================================================================
+
+cPanel exam CPSP Answers
+Which of the following options best describes the role of Shared Hosting on a web server?
+
+Providing hosting for multiple websites owned by different people on one server.
+
+
+Which of the following capabilities can a cPanel account user perform easily from within the cPanel account interface without the aid of a system administrator?
+
+File and configuration management.
+
+
+Which of the following options best describes a core benefit to using cPanel & WHM, as a web hosting provider operating on a cPanel & WHM environment?
+
+cPanel users are able to self-manage configurations and software, reducing the support demand on the web host
+
+
+Which of the following options best describes one way that cPanel makes installation of cPanel & WHM an easy process?
+
+cPanel provides a single command that can be copied and pasted onto the command line.
+
+
+Which of the following statistics does a cPanel account have access to from within the cPanel account interface?
+
+Bandwidth usage
+
+
+cPanel provides multiple database software options for server administrators to choose from. MySQL is one of these options.
+
+Which of the following indicates one of the other options that are supported and provided by cPanel?
+
+MariaDB
+
+
+
+Assuming "domain.com" is replaced with your actual domain on a cPanel & WHM server, which of the following website addresses would not bring you to a cPanel login page?
+
+domain.com
+
+
+After logging into an email account's webmail interface, the account user can then perform which of the following tasks directly from within their email dashboard interface?
+
+Configure spam filtering settings.
+
+
+Which of the following options indicates a cPanel & WHM feature that can provide users with access to the server's command line interface (or, CLI) directly from within the cPanel or WHM interfaces?
+
+Terminal
+
+
+Assuming that your server's IP address is '12.34.56.78', which of the following services could be reached by navigating to the following address in your browser?
+
+https://12.34.56.78:2087
+
+Webhost Manager (WHM)
+
+
+What does the acronym WHM stand for, in cPanel & WHM?
+
+Web Host Manager
+
+
+A user who has little-to-no experience in server management will be able to do what?
+
+Use the product out-of-the-box
+
+
+
+Of the following options, which of these are cPanel & WHM features that would be of interest to a programmer or web developer?
+
+API
+
+
+About how long does it take to set up a mailing-list in cPanel?
+
+1m
+
+
+Which of the following choices describes the method that a customer would use to access their cPanel or WHM interfaces, once it's been installed on a server?
+
+Using a web browser, like Chrome or Firefox.
+
+
+
+Of the following features found in a cPanel account interface, which would most likely be considered as important to a beginner-level customer seeking a cPanel & WHM web host?
+
+Apache Handlers
+
+
+Of the following services, which of these can be managed by website owners using only their cPanel account interface?
+
+Scheduled Tasks
+
+
+Which of the following features available in the cPanel account interface allows new website files to easily be created, uploaded and edited by the user, directly from within the cPanel interface?
+
+File Manager
+
+
+Which of the following features found in the cPanel account interface will allow a cPanel account user to create subaccounts to give email, FTP, and webdisk access to additional users?
+
+
+User Manager
+
+
+Which of the following feature categories within a cPanel account interface will allow users to view their Bandwidth usage statistics?
+
+Metrics
+
+
+Which of the following online resources provided by cPanel is the ideal place for customers to submit cPanel & WHM feature ideas, improvements, and suggestions for our developers to consider?
+
+The cPanel Feature Request Site confirm
+
+
+Which of the following services does cPanel provide for every customer with an active cPanel license?
+
+Free technical support, support services, and customer assistance. confirm from website
+
+
+Which of the following options indicates the office hours in which the cPanel Technical Support Analyst team is available?
+
+24 hours a day, 365 days a year.
+
+
+Which of the following types of applications can be created and managed with the cPanel account interface's Application Manager feature?
+
+Node.js Applications confirm
+
+
+Which of the following services does our support team provide for customers coming from DirectAdmin, Plesk, and Ensim control panels?
+
+Free migration confirm from website
+
+We offer free migration services for customers who use the following ... Plesk®. DirectAdmin. Ensim®.
+
+Which of the following options indicates the frequency of major updates being released for the product each year?
+
+Quarterly releases confirm from website
+
+
+Which of the following indicates cPanel's flagship product?
+
+EasyApache & cPHulk
+
+
+In 2017, cPanel celebrated its anniversary of how many years?
+
+20 years
+
+
+Which of the following categories found within the WHM interface provide a number of helpful features for administrators to secure their server with?
+
+Security Center
+
+
+Which of the following options indicates an actual interface within WHM that will allow administrators to specify which features are available to specific users or packages on the server?
+
+Feature Manager confirm from whm
+
+
+Which of the following options best describes WHM's EasyApache feature?
+
+An administrative feature that makes web server software changes fast and easy.
+
+
+cPanel Support will provide which of the following services for customers that request it?
+
+Performing cPanel & WHM installations.
+
+Which of the following options best describes an interface within WHM that allows administrators to easily create sets of limitations for different types of accounts, commonly based on some arrangement of web host pricing options?
+
+Packages >> Add a Package
+
+
+Which of the following options indicates an actual feature included with EasyApache 4 that allows accounts on the same server to use different versions of PHP simultaneously?
+
+MultiPHP
+
+
+Which of the following options are important for a customer to have on their server, in order to allow their cPanel & WHM installation to be licensed properly?
+
+A public IP address.
+
+
+Which of the following options indicates an actual feature within WHM that can be used to migrate one or more accounts between servers?
+
+Transfer Tool
+
+
+Which of the following options best describes a benefit of using SSL certificates to secure websites hosted on your server?
+
+They ensure that communication between your server and the internet is safe and encrypted.
+
+
+Which of the following Content Management Systems (CMS) have a feature built into cPanel that allows customers to manage its installations and updates from within the cPanel account interface?
+
+WordPress
+
+
+Which of the following options indicates an actual security feature of cPanel & WHM servers that acts as a safety net for website security by using rules created by security authorities to intercept malicious attempts at exploiting websites and web applications?
+
+ModSecurity
+
+
+Which of the following operating systems can cPanel & WHM NOT be installed or used on?
+
+Windows Servers
+
+
+Which of the following features available in WHM can help customers migrate easily between servers?
+
+Transfer Tool
+
+
+Which of the following options best describes the role of a web hosting control panel?
+
+Software on the operating system that provides a graphical interface designed to help automate server administration tasks.
+
+
+Which of the following operating systems are supported by cPanel & WHM's official system requirements?
+
+CentOS Server
 ======================================================================================================================
 ======================================================================================================================
 ======================================================================================================================
