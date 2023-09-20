@@ -10287,6 +10287,97 @@ MSSQL     1433
 SSH     22
 SSH Shared/Reseller Servers     2222
 ======================================================================================================================
+
+LiteSpeed Webserver is built using what type of architecture (as opposed to Apache's process-based architecture)?
+Answer is: event-driven 
+
+
+Which of the following operating systems is LiteSpeed WebServer not officially supported to operate on?
+ArchLinux
+
+How much disk space is required for the actual installation of LiteSpeed WebServer (not the runtime usage)?
+200MB
+
+LiteSpeed Webserver is commonly abbreviated using what acronym?
+LSWS
+
+What is the full path of the default LiteSpeed WebServer installation directory, when installing as the root user?
+/usr/local/lsws
+
+A client running LiteSpeed WebServer on a cPanel & WHM environment has configured their web server so that Apache listens on port 80, and LiteSpeed is configured with a Port Offset of 8000. What port is LiteSpeed listening on, in this configuration?
+80+8000= 8080
+
+How does LSCache store its files?
+stores files on disk
+
+Which of the following might help an administrator speed up caching on a LiteSpeed environment?
+moving it to either RAM, RAMdisk, or a Solid State Disk (SSD).
+
+Finish this file path, used when adding configuration directives to specific segments of the Apache configuration (and specifically, when setting up caching to store using RAM):
+
+/usr/local/apache/conf/includes/pre_main__global.conf 
+
+What's the first recommended step to take when resolving the issue of a 'Cache Miss', or reports of a site being slow despite caching being enabled?
+simply perform a restart of Litespeed. -- /usr/local/lsws/bin/lswsctrl restart
+
+What is the name of the PHP mode that was added in LSPHP 5.3 that allows LSWS to restart without causing PHP processes to die, but instead exits processes after they have been idle for 5 minutes?
+PHP detached mode
+
+Which of the following suEXEC modes are not compatible with opcode caching?
+Worker mode
+
+Which of the following suEXEC modes create a new parent process for each user?
+ProcessGroup
+
+Which of the following are one of the primary limitations that should be considered with OPCache, regardless of the version of LSWS you're using?
+Increased RAM requirements.
+
+
+Which of the following options would be a viable method to install OPCache on a cPanel & WHM environment?
+WHM EasyApache interface
+
+
+Of the following paths, which would theoretically function as a correct path to an appropriate custom PHP configuration include file for a single user's domain? 
+For the purposes of this question, assume that all usernames and domains in the answer choices are legitimate.
+/etc/apache2/conf.d/userdata/std/2_4/$USER/yourdomain.com/customphpini.conf
+
+
+Adding the following value to your Environment Variables within the LSWS WebAdmin Console, under the External Apps interface, will enable all of your users to use which file to define custom PHP configurations within their individual accounts' web folders?
+Environment Variable:
+LSPHP_ENABLE_USER_INI=on
+Tip: Just type the exact name of the file itself; we don't need any paths or directories here.
+.user.ini 
+
+
+Which of the following circumstances might result in a 503 error occurring on a user site?
+attack occurring on the site in the question
+
+
+A user is reporting frequent timeouts on connection attempts. Which of the following may be a potential solution to resolve the situation?
+No Abort
+
+Which of the following is the correct path used to execute the enable_ruby_python_selector.sh script?
+/usr/local/lsws/admin/misc/enable_ruby_python_selector.sh
+
+
+As an administrator, you're using a Cloudlinux server running a Litespeed Webserver environment. You're trying to make sure that one of your LVEs is configured optimally, as the user has reported 500 and 503 errors occurring from time to time. The server is currently configured with an EP limit of 10, PMEM defined at the default of 1024MB, CPU SPEED set at 90%, and is operating with a 4-CPU/Worker Litespeed License.
+To determine the ideal suEXEC Max Connections value, what number would you use in the blank, for the below equation?
+         / 4 = Ideal suEXEC Max Connections  == 10
+SuExec_MaxConn = CloudLinux EP / #CPU License
+
+
+Which of the following types of protection does Litespeed provide for Wordpress?
+Brute Force
+
+Port 443 UDP must be allowed in and out of your server to allow which of the following features to function successfully? 
+QUIC
+
+Because ModSecurity component, when used with Litespeed, only processes dynamic requests, not static, what impact should be expected as a result?
+ModSecurity experience improves performance
+
+What is the most granular level of PHP version customization that LSPHP supports?
+Directory-level
+
 ======================================================================================================================
 
 
