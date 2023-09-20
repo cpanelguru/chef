@@ -1,7 +1,7 @@
 User
 10 / 10
 
-root@pveinfranode2:~# lsblk
+root@myserver:~# lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda           8:0    0 223.6G  0 disk 
 ├─sda1        8:1    0  1007K  0 part 
@@ -24,17 +24,17 @@ nvme0n1     259:0    0 894.3G  0 disk
 nvme1n1     259:3    0 894.3G  0 disk 
 ├─nvme1n1p1 259:4    0 894.2G  0 part 
 └─nvme1n1p9 259:5    0     8M  0 part 
-root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme0n1
+root@myserver:~# lsblk -o name,model,serial,uuid /dev/nvme0n1
 NAME        MODEL                      SERIAL         UUID
 nvme0n1     SAMSUNG MZQLB960HAJR-00007 S437NA0N608249 
 ├─nvme0n1p1                                           8348514886748337779
 └─nvme0n1p9                                           
-root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme1n1
+root@myserver:~# lsblk -o name,model,serial,uuid /dev/nvme1n1
 NAME        MODEL                      SERIAL         UUID
 nvme1n1     SAMSUNG MZQLB960HAJR-00007 S437NA0N608246 
 ├─nvme1n1p1                                           8348514886748337779
 └─nvme1n1p9                                           
-root@pveinfranode2:~# ls -la /dev/disk/by-id/
+root@myserver:~# ls -la /dev/disk/by-id/
 total 0
 drwxr-xr-x 2 root root 640 Aug 23 03:33 .
 drwxr-xr-x 8 root root 160 Apr 14 18:57 ..
@@ -68,7 +68,7 @@ lrwxrwxrwx 1 root root   9 Sep  8 08:04 wwn-0x5002538e2011f56c -> ../../sda
 lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part1 -> ../../sda1
 lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part2 -> ../../sda2
 lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part3 -> ../../sda3
-root@pveinfranode2:~# zpool status
+root@myserver:~# zpool status
   pool: rpool
  state: ONLINE
   scan: scrub repaired 0B in 00:09:12 with 0 errors on Sun Aug 13 00:33:14 2023
@@ -189,7 +189,7 @@ The performance and availability of your ZFS pools can be affected during resilv
 
 second disk change.
 ===================
-root@pveinfranode2:~# lsblk 
+root@myserver:~# lsblk 
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda           8:0    0 223.6G  0 disk 
 ├─sda1        8:1    0  1007K  0 part 
@@ -212,17 +212,17 @@ nvme0n1     259:0    0   1.7T  0 disk
 nvme1n1     259:3    0 894.3G  0 disk 
 ├─nvme1n1p1 259:1    0 894.2G  0 part 
 └─nvme1n1p9 259:2    0     8M  0 part 
-root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme1n1
+root@myserver:~# lsblk -o name,model,serial,uuid /dev/nvme1n1
 NAME        MODEL                      SERIAL         UUID
 nvme1n1     SAMSUNG MZQLB960HAJR-00007 S437NA0N608246 
 ├─nvme1n1p1                                           8348514886748337779
 └─nvme1n1p9                                           
-root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme0n1
+root@myserver:~# lsblk -o name,model,serial,uuid /dev/nvme0n1
 NAME        MODEL                      SERIAL         UUID
 nvme0n1     SAMSUNG MZQL21T9HCJR-00A07 S64GNS0TB02455 
 ├─nvme0n1p1                                           8348514886748337779
 └─nvme0n1p9                                           
-root@pveinfranode2:~# ls -la /dev/disk/by-id/
+root@myserver:~# ls -la /dev/disk/by-id/
 total 0
 drwxr-xr-x 2 root root 640 Sep 14 11:54 .
 drwxr-xr-x 8 root root 160 Apr 14 18:57 ..
@@ -256,7 +256,7 @@ lrwxrwxrwx 1 root root   9 Sep 18 09:08 wwn-0x5002538e2011f56c -> ../../sda
 lrwxrwxrwx 1 root root  10 Sep 18 09:08 wwn-0x5002538e2011f56c-part1 -> ../../sda1
 lrwxrwxrwx 1 root root  10 Sep 18 09:08 wwn-0x5002538e2011f56c-part2 -> ../../sda2
 lrwxrwxrwx 1 root root  10 Sep 18 09:08 wwn-0x5002538e2011f56c-part3 -> ../../sda3
-root@pveinfranode2:~# zpool status rpool2
+root@myserver:~# zpool status rpool2
   pool: rpool2
  state: DEGRADED
 status: One or more devices has been taken offline by the administrator.
