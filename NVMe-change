@@ -1,0 +1,188 @@
+User
+10 / 10
+
+root@pveinfranode2:~# lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0 223.6G  0 disk 
+├─sda1        8:1    0  1007K  0 part 
+├─sda2        8:2    0   512M  0 part 
+└─sda3        8:3    0 223.1G  0 part 
+sdb           8:16   0 223.6G  0 disk 
+├─sdb1        8:17   0  1007K  0 part 
+├─sdb2        8:18   0   512M  0 part 
+└─sdb3        8:19   0 223.1G  0 part 
+zd0         230:0    0   200G  0 disk 
+├─zd0p1     230:1    0     1M  0 part 
+├─zd0p2     230:2    0     1G  0 part 
+├─zd0p3     230:3    0    32G  0 part 
+└─zd0p4     230:4    0   167G  0 part 
+zd16        230:16   0   1.1T  0 disk 
+└─zd16p1    230:17   0     1T  0 part 
+nvme0n1     259:0    0 894.3G  0 disk 
+├─nvme0n1p1 259:1    0 894.2G  0 part 
+└─nvme0n1p9 259:2    0     8M  0 part 
+nvme1n1     259:3    0 894.3G  0 disk 
+├─nvme1n1p1 259:4    0 894.2G  0 part 
+└─nvme1n1p9 259:5    0     8M  0 part 
+root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme0n1
+NAME        MODEL                      SERIAL         UUID
+nvme0n1     SAMSUNG MZQLB960HAJR-00007 S437NA0N608249 
+├─nvme0n1p1                                           8348514886748337779
+└─nvme0n1p9                                           
+root@pveinfranode2:~# lsblk -o name,model,serial,uuid /dev/nvme1n1
+NAME        MODEL                      SERIAL         UUID
+nvme1n1     SAMSUNG MZQLB960HAJR-00007 S437NA0N608246 
+├─nvme1n1p1                                           8348514886748337779
+└─nvme1n1p9                                           
+root@pveinfranode2:~# ls -la /dev/disk/by-id/
+total 0
+drwxr-xr-x 2 root root 640 Aug 23 03:33 .
+drwxr-xr-x 8 root root 160 Apr 14 18:57 ..
+lrwxrwxrwx 1 root root   9 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N129842 -> ../../sda
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N129842-part1 -> ../../sda1
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N129842-part2 -> ../../sda2
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N129842-part3 -> ../../sda3
+lrwxrwxrwx 1 root root   9 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N202806 -> ../../sdb
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N202806-part1 -> ../../sdb1
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N202806-part2 -> ../../sdb2
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N202806-part3 -> ../../sdb3
+lrwxrwxrwx 1 root root  12 Aug 23 03:33 lvm-pv-uuid-ivI76E-RRNo-fAqz-drOU-qI8u-GVHA-NkuXkI -> ../../zd16p1
+lrwxrwxrwx 1 root root  11 Apr 14 18:57 lvm-pv-uuid-jEZgKt-v2IV-Q26f-4H1S-XAnD-TgWZ-m9CscC -> ../../zd0p4
+lrwxrwxrwx 1 root root  13 Apr 14 18:57 nvme-eui.343337304e6082460025384100000001 -> ../../nvme1n1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-eui.343337304e6082460025384100000001-part1 -> ../../nvme1n1p1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-eui.343337304e6082460025384100000001-part9 -> ../../nvme1n1p9
+lrwxrwxrwx 1 root root  13 Apr 14 18:57 nvme-eui.343337304e6082490025384100000001 -> ../../nvme0n1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-eui.343337304e6082490025384100000001-part1 -> ../../nvme0n1p1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-eui.343337304e6082490025384100000001-part9 -> ../../nvme0n1p9
+lrwxrwxrwx 1 root root  13 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608246 -> ../../nvme1n1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608246-part1 -> ../../nvme1n1p1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608246-part9 -> ../../nvme1n1p9
+lrwxrwxrwx 1 root root  13 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608249 -> ../../nvme0n1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608249-part1 -> ../../nvme0n1p1
+lrwxrwxrwx 1 root root  15 Apr 14 18:57 nvme-SAMSUNG_MZQLB960HAJR-00007_S437NA0N608249-part9 -> ../../nvme0n1p9
+lrwxrwxrwx 1 root root   9 Sep  8 08:04 wwn-0x5002538e00229d44 -> ../../sdb
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e00229d44-part1 -> ../../sdb1
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e00229d44-part2 -> ../../sdb2
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e00229d44-part3 -> ../../sdb3
+lrwxrwxrwx 1 root root   9 Sep  8 08:04 wwn-0x5002538e2011f56c -> ../../sda
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part1 -> ../../sda1
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part2 -> ../../sda2
+lrwxrwxrwx 1 root root  10 Sep  8 08:04 wwn-0x5002538e2011f56c-part3 -> ../../sda3
+root@pveinfranode2:~# zpool status
+  pool: rpool
+ state: ONLINE
+  scan: scrub repaired 0B in 00:09:12 with 0 errors on Sun Aug 13 00:33:14 2023
+config:
+
+        NAME                                                     STATE     READ WRITE CKSUM
+        rpool                                                    ONLINE       0     0     0
+          mirror-0                                               ONLINE       0     0     0
+            ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N129842-part3  ONLINE       0     0     0
+            ata-SAMSUNG_MZ7LH240HAHQ-00005_S45RNA0N202806-part3  ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: rpool2
+ state: ONLINE
+  scan: scrub repaired 0B in 01:02:48 with 0 errors on Sun Aug 13 01:26:51 2023
+config:
+
+        NAME         STATE     READ WRITE CKSUM
+        rpool2       ONLINE       0     0     0
+          mirror-0   ONLINE       0     0     0
+            nvme0n1  OFFLINE       0     0     0
+            nvme1n1  ONLINE       0     0     0
+
+errors: No known data errors
+
+We wanted to replace the disk nvme0n1 Please provide detailed steps to replace the drive including the below steps.
+1  Please start by making the current disk offline and remove it from the disk array
+2 Adding the new disk.
+3 cfdisk before using it delete all existing parting on the new disk.
+4 Copy the Partition of the new disk using sgdisk.
+5  Clear the partition using labelclear.
+6 Replace the partition in the pool  
+7 Monitor the resilvering process
+8 Verify Data Integrity using scrub: 
+9 Final Verification:
+10 Also, verify disk and drive are healthy
+ChatGPT
+Certainly! Below are the detailed steps to replace the nvme0n1 disk. Please note that these steps assume you're working in a Linux environment and have the necessary tools installed:
+
+1. Offline the Current Disk:
+To make the current disk offline:
+
+bash
+Copy code
+zpool offline rpool2 nvme0n1
+2. Remove the Disk from the Disk Array:
+Before physically removing the disk from the machine, ensure that all important data is backed up.
+
+3. Add the New Disk:
+Physically insert the new disk into the machine. Once inserted, identify its device name (e.g., /dev/nvme0n1).
+
+4. Clear All Existing Partitions on the New Disk:
+bash
+Copy code
+cfdisk /dev/nvme0n1
+Using the cfdisk interface, delete all existing partitions on the new disk.
+
+5. Copy the Partition of the Old Disk using sgdisk:
+This will duplicate the partition table of the working NVMe drive (nvme1n1) to the new NVMe drive (nvme0n1):
+
+bash
+Copy code
+sgdisk -R=/dev/nvme0n1 /dev/nvme1n1
+6. Clear the Partitions using labelclear:
+If labelclear is not installed, you might need the lvm2 package:
+
+bash
+Copy code
+apt-get install lvm2  # for Debian/Ubuntu systems
+yum install lvm2  # for RedHat/CentOS systems
+Clear the labels:
+
+bash
+Copy code
+wipefs -a /dev/nvme0n1
+7. Replace the Old Disk with the New Disk in the Pool:
+bash
+Copy code
+zpool replace rpool2 nvme0n1
+8. Monitor the Resilvering Process:
+bash
+Copy code
+zpool status rpool2
+You can run this command repeatedly or use watch to monitor it in real-time:
+
+bash
+Copy code
+watch zpool status rpool2
+9. Verify Data Integrity using Scrub:
+Once resilvering is complete, initiate a scrub to check and repair the pool:
+
+bash
+Copy code
+zpool scrub rpool2
+10. Final Verification:
+Check the status of the pool:
+
+bash
+Copy code
+zpool status rpool2
+Ensure that everything is ONLINE and there are no known data errors.
+
+11. Verify Disk and Drive Health:
+To verify the health of NVMe drives, use the nvme command:
+
+bash
+Copy code
+nvme smart-log /dev/nvme0n1
+This command provides the SMART log of the NVMe drive, which includes various health and performance metrics.
+
+Note:
+Always ensure you have backups of critical data before undertaking disk replacements or other operations that affect storage.
+
+If you are unsure or face issues during any of the steps, seek assistance before proceeding further.
+
+The performance and availability of your ZFS pools can be affected during resilvering, so schedule maintenance operations during off-peak hours if possible.
