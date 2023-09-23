@@ -75,15 +75,7 @@ A customer with the Plesk Web Pro edition installed on his server wants to exten
 Select one correct answer.
 Activate the Plesk Web Host license.
 
-Switch the edition in the Plesk server settings.
-Re-install Plesk on the customer's server and choose the Web Host edition during installation.
-Upgrade Plesk to the Web Host edition using Plesk Installer.
-ChatGPT
-When it comes to upgrading the license edition for Plesk, you don't typically need to reinstall Plesk or make invasive changes. Instead, you would update the license key to reflect the new edition. Once the new license is activated, the features of that edition become available.
-Therefore, the correct answer is:
-Activate the Plesk Web Host license.
-Once the new license is activated in Plesk, the server will have the capabilities of the Plesk Web Host edition, allowing the customer to host more than 30 domains.
-User
+
 Several of your customers request for you to extend their subscriptions by allocating more disk space. The requested increases range from 10GB to 30GB. How will you address the needs of your customers?
 Select one correct answer.
 Create a new service plan for these customers with the highest requested disk space limit increase, and upgrade the customers who need the increase to this new plan.
