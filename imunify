@@ -71,3 +71,41 @@ Which of the following commands can be used to perform Imunify360-related tasks 
 ====================
 LiteSpeed Certification 
 
+
+Which of the following statements most accurately describes the primary requirement for QUIC to function successfully on your server?
+
+-- You must ensure that port 443 on UDP is allowed in and out through the firewall.
+
+Which of the following statements most accurately describes LSPHP's PHP version support?
+
+-- LSPHP supports the use of different PHP versions per-account, within a web server's global configuration.
+
+For which of these systems does Litespeed not offer an official LSCache plugin?
+
+-- OctoberCMS
+
+For which of the following web server software options does Litespeed work as a drop-in replacement?
+
+-- Apache 
+Of the following platforms, which does LiteSpeed provide brute protection capabilities for?
+
+-- Wordpress
+
+Which of the following statements most accurately describes LSPHP's support for Opcode Caching?
+
+-- LSPHP supports Opcode Caching within all three suExec modes.
+
+Which of the following options most accurately indicates the primary reason that Mod Security experiences a significant performance boost when used with LiteSpeed?
+
+-- ModSecurity in Litespeed only processes rules for dynamic requests, not static.
+
+Which of the following statements best describes LiteSpeed's support for reCAPTCHA?
+
+-- LiteSpeed supports the use of reCAPTCHA.
+
+Which of the following types of architectures does LiteSpeed utilize?
+
+-- Event-driven Architecture 
+Which of the following Apache rewrite flags work slightly differently when using LiteSpeed, as opposed to Apache? 
+
+-- The [L] (last) flag.
