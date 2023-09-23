@@ -61,42 +61,36 @@ Select one correct answer.
 A customer asks you to provide them with additional permissions. You customize their subscription to fulfill this request. What are the side effects of this action?
 Select one correct answer.
 -- the subscription is now in the locked state, which prevents it from synchronizing with its service plan.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A customer with the Plesk Web Admin edition on his server wants to expand his business and start providing hosting services to small business owners. For this reason, he has requested an upgrade to the Plesk Web Pro edition. How should you satisfy this request?
+-- Activate the Plesk Web Pro license.
+
+A customer requests that you extend their subscription by allocating more disk space. What is the recommended way to address this request?
+-- Modify the customer's subscription to increase their disk space limit
+
+Subscribers of a particular service plan keep changing their mail service settings, which slows mail delivery and causes the server mail queue to overflow. How will you solve this problem?
+-- Modify the customers’ service plan and revoke the permission to manage mail settings. Then synchronize the customers’ subscriptions with the plan.
+
+Your company recently acquired another hosting business with more than 100 servers managed by Plesk. New licenses were purchased for all acquired servers, and old licenses are about to be terminated. What is the fastest way to install purchased licenses on the acquired servers?
+-- Install new licenses with RESTful API.
+
+
 You store backups on a NAS device, which is mounted as a local disk on multiple Plesk servers. What should you do to be able to restore backups created by one Plesk server onto another Plesk server, if the first server’s hardware fails?
 Select one correct answer.
-Synchronize Plesk encryption keys on all servers.
+-- Synchronize Plesk encryption keys on all servers.
 
 You are installing Plesk on your server. However, there is no latest stable Plesk version available for your current operating system. Where can you find a list of operating systems supported by the latest stable release of Plesk?
 Select one correct answer.
-Plesk Release Notes
+-- Plesk Release Notes
 
 A customer with the Plesk Web Pro edition installed on his server wants to extend his license and host more than 30 domains on the same server. For this reason, the customer has requested an upgrade to the Plesk Web Host edition. What should you do to satisfy this request?
 Select one correct answer.
-Activate the Plesk Web Host license.
-
+-- Activate the Plesk Web Host license.
 
 Several of your customers request for you to extend their subscriptions by allocating more disk space. The requested increases range from 10GB to 30GB. How will you address the needs of your customers?
 Select one correct answer.
-Create a new service plan for these customers with the highest requested disk space limit increase, and upgrade the customers who need the increase to this new plan.
-Adjust the amount of disk space on the corresponding service plans that were used to create the customers’ subscriptions.
-Create an add-on service plan with 10GB of additional disk space. Then apply this add-on to customers’ subscriptions as many times as needed (e.g., 3 times for a 30GB increase in disk space).
-Create two add-on service plans that increase the disk space limit by 10GB and 20GB respectively. Then assign these add-on service plans according to customers’ requests.
-ChatGPT
-To address the individual needs of customers without being wasteful in resources or creating unnecessary complexity, you would ideally opt for a flexible solution that allows you to add disk space incrementally, based on each customer's request.
-The option that provides this kind of flexibility is:
-Create an add-on service plan with 10GB of additional disk space. Then apply this add-on to customers’ subscriptions as many times as needed (e.g., 3 times for a 30GB increase in disk space).
-This way, you can add the 10GB add-on once for a customer who needs 10GB extra, twice for a customer who needs 20GB extra, and three times for a customer who needs 30GB extra. This approach provides granular control and ensures that each customer gets the exact amount of additional disk space they've requested.
-User
-A customer requests that you extend their subscription by allocating more disk space. What is the recommended way to address this request?
-Select one correct answer.
-Create a new service plan for the customer with increased disk space limits, and upgrade the subscription to this new plan.
-Modify the customer's subscription to increase their disk space limit.
-Open the service plan the subscription is based on and adjust the limits on disk space. The subscription will automatically sync with the plan.
-Create an add-on that contains the additional amount of disk space. Then enable this add-on for the customer’s subscription.
-ChatGPT
-The best approach depends on whether or not you anticipate other customers having similar requests in the future or if this is a one-off request. If many customers might want this upgrade, then creating a new service plan or an add-on can be a good approach.
-However, if this is a unique request from a single customer and you do not foresee the need to regularly adjust disk space for many users, then directly modifying the customer's subscription can be the most straightforward approach.
-Given these considerations, the recommended way to address a unique request from a single customer is:
-Modify the customer's subscription to increase their disk space limit.
-This method provides a direct and immediate solution to the customer's request without altering other aspects of the service plans or affecting other customers. If, in the future, many other customers have similar requests, then considering the creation of new service plans or add-ons might be more appropriate.
+-- Create an add-on service plan with 10GB of additional disk space. Then apply this add-on to customers’ subscriptions as many times as needed (e.g., 3 times for a 30GB increase in disk space).
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
